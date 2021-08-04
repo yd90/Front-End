@@ -1,0 +1,114 @@
+<!--Basic HTML Structure-->
+<!DOCTYPE html> <!--
+                    It informs the web broswer about the version(Type)
+                    of HTML used in building the web document
+
+                    This format means using HTML5
+                -->
+<html> <!--Root Element-->
+    <head>
+        <!--Include Page Info (metedata)
+            <title></title>
+            <style></style> --CSS
+            <link rel="..." href="..."> -- Link external style sheets
+                                        --
+                                        -- Favicon AKA shortcut icon or tab icon
+                                        -- rel="icon" href="Image Path"
+                                        -- Some people may use "shortcut icon", it also work.
+                                        -- Example: facebook use "short icon" teaching council nz use "icon"
+                                        -- e.g <link rel="icon" href="image/icon.png">
+                                        -- Notice: In vs code live server, image cannot be stored in root 
+                                        -- (Creating a file to store image)
+            <meta>
+                <meta charset="...">   -- Character set (New attribute in HTML5)
+                                       -- UTF-8 covers almost all of the characters and symbols
+                                       -- If we wish to write Mandarin, Arabic, or Japanese, we need it.
+                                       -- Otherwise, Бзиа збаша will become ???? ????? (Lose Formatting)
+                <meta name="keywords" content="..."> -- It wasn't very important
+                                                     -- We don't have to write it (Optional)
+                                                     -- Google already disregarded the keywords meta tag for many years
+                                                     -- Why?
+                                                     -- Keywords Abuse (People stuff irrelevant keywords or repeat same word,
+                                                     -- becasue many keywords therefore usually meant good rankings in the 
+                                                     -- search results)                 
+                <meta name="description" content="..."> -- The description will show up below the title and URL of page as 
+                                                        -- it appears in the search engine results
+                                                        -- Not 100% shown up 
+                                                        -- Example 1: Gucci website uses 100% content of description
+                                                        -- Example 2: Auckland council uses words that very relevant to the website
+                <meta name="author" content="..."> -- Author
+                <meta name="viewport" content="..."> -- HTML5 New Attribute
+                                                     -- Making the content of webpage have a well-formed layout in a small device
+                                                     -- content="width=device-width,initial-scale=1"
+        -->
+    </head>
+    <body>
+        <!--Include Page Content-->
+        <!--
+            <h1></h1> <h2></h2> <h3></h3> <h4></h4> <h5></h5> <h6></h6> -- Heading
+            <p></p> -- Paragraph
+            <img src="" alt=""> -- Image
+                  -- Four attributes src - Image Path 
+                                     alt - Content that the image cannot shown up
+                                     width
+                                     height
+            <br> -- Blank Line
+            <a href="..."></a> -- Hyperlink / Back to top
+                               -- href - Web Address / local file path
+                               -- target - _blank means opening link in new window
+                               --
+                               -- Back to top (Operation)
+                               -- <p id="top">...</p>
+                               -- <br>
+                               -- ...                       Long Page
+                               -- <br>
+                               -- <a href="#top">Back to top</a>
+            <sup></sup> -- 上标
+            <sub></sub> -- 下标
+            <strong></strong> -- 加粗
+            <em></em> --斜体
+
+            Unordered List              Ordered List
+            <ul>                        <ol>
+                <li>...</li>                <li>...</li>
+                <li>...</li>                <li>...</li>
+            </ul>                       </ol>           
+            Bullet Point                Number
+
+            Table
+            <table>                     -- <tr></tr> Table Row
+                <tr>                    -- <th></th> Table Header
+                    <th>num1</th>       -- <td></td> Table Cell
+                    <th>num2</th>
+                </tr>
+                <tr>
+                    <td>1</td>          ------------------
+                    <td>2</td>          -  num1 -  num2  -
+                </tr>                   ------------------
+                <tr>                    -   1   -   2    -
+                    <td>3</td>          ------------------
+                    <td>4</td>          -   3   -   4    -
+                </tr>                   ------------------
+            <table>
+
+            <form action="..." method="POST or GET"> -- Sending data to the server for processing
+                ...                                  -- When the data is submitted, the name and value are encoded and sent to the 
+            </form>                                  -- server in an HTTP request message using GET or POST.
+                                                     -- 
+                                                     -- POST vs GET
+                                                     -- GET:
+                                                            - Data will be displayed in url
+                                                            - e.g http://127.0.0.1:5500/index.html?username=Hello+&username=world
+                                                     -- POST:
+                                                            - Data is appended to the body of the HTTP request
+                                                            - e.g username: "Hello"
+                                                                  passowrd: "World" 
+            Drop Down Menu
+            <select>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+            </select>
+        -->
+    </body>
+</html>
